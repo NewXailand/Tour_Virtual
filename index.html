@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="icon" href="CODIGO\IMAGENES\LOGO.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\offcanvas.css">
+
+    <script src="js/main.js" defer></script>
+    
+</head>
+<body style="background-image: url(CODIGO/IMAGENES/FONDO.png) ; margin: 10; padding: 100; height: 100%; display: flex; flex-direction: column; overflow-y: auto;">
+
+    <!-- Navbar  -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#ventajas">Paneles Solares</a></li>
+            <li><a href="#CABLES">Cableado Solar</a></li>
+            <li><a href="#LEY">Ley de Ohm</a></li>
+            <li><a href="#INVERSORES">Inversores Solares</a></li>
+            <li><a href="#ONDAS">Tipos de Ondas</a></li>
+            <li><a href="#DINERO">Viabilidad del Proyecto</a></li>
+
+        </ul>
+        <button id="openOffcanvas" class="btn-open">Viaje Solar</button>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div id="offcanvas" class="offcanvas">
+        <button class="close-offcanvas" id="closeOffcanvas">&times;</button>
+        <div class="offcanvas-content" style="text-align: center;">
+            <img src="CODIGO\IMAGENES\LOGO.png" alt="Imagen del Tour Virtual" class="tour-image">
+            <div style="background-color: #1A2B4C; border-radius: 30px; padding: 20px; margin: 20px 0;">
+                <p class="offcanvas-text" style="color: white;">Es hora de conocer todos los detalles sobre nuestro sistema de energia solar.</p>
+            </div>
+            <button id="tourButton" class="btn-tour">
+                <span class="material-icons">play_circle</span> Iniciar
+            </button>
+        </div>
+    </div>
+
+    <!-- Secciones de la página -->
+    <div style="max-width: 1000px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto;background-image: url(C:\Users\vasqu\Videos\TOUR_VIRTUAL_SALA_SISTEMAS\IMAGENES\colegio2.png);">
+        <section id="ventajas" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-align: center; line-height: 1.5; margin-bottom: 20px; color: white; font-size: 40px;">Paneles Solares</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO\IMAGENES\PANEL SOLAR.jpg" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR">
+                Son dispositivos que convierten la luz solar en electricidad mediante el efecto fotovoltaico. Están hechos de celdas de silicio que generan 
+                corriente continua (CC) cuando les llega luz solar. Un inversor transforma esta energía en corriente alterna (CA), que es la que usamos en casa.
+                Tipos principales:
+                Monocristalinos: Más eficientes, ideales para espacios pequeños.
+                Policristalinos: Más económicos, para áreas grandes.
+                Película delgada: Flexibles, aunque menos eficientes, usados en techos especiales o portátiles.
+                Son una opción ecológica para ahorrar energía y reducir emisiones contaminantes.</p>
+        </section>
+
+        <section id="CABLES" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-shadow: 10px; text-align: center; line-height: 1.5; margin-bottom: 30px; color: white; font-size: 40px;">Cableado Solar</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO/IMAGENES/CABLE.webp" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR" style="margin-top: 5%;">
+                El cableado solar es fundamental para la transmisión eficiente de la energía generada por los paneles fotovoltaicos hacia el inversor o sistema de almacenamiento. 
+                Los cables utilizados suelen ser de calibres 10 AWG a 6 AWG, dependiendo de la corriente máxima que debe transportar el sistema. Para instalaciones de mayor 
+                potencia, se utilizan cables de calibres más gruesos (4 AWG o 2 AWG) para minimizar las pérdidas de energía por resistencia y asegurar una conducción adecuada. 
+                Además, estos cables deben ser capaces de soportar las condiciones externas sin perder rendimiento o seguridad.</p>
+        </section>
+
+        <section id="LEY" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-shadow: 10px; text-align: center; line-height: 1.5; margin-bottom: 30px; color: white; font-size: 40px;">Ley de Ohm</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO/IMAGENES/LEY.jpg" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR" style="margin-top: 5%;">
+                La Ley de Ohm se puede entender fácilmente con el ejemplo de un tanque de agua:
+                El voltaje (V) es como la presión del agua en el tanque. Cuanto mayor sea la presión, más fuerza tiene el agua para empujar y mover el flujo a través de la tubería.
+                La corriente (I) representa el flujo de agua que pasa por la tubería. A mayor presión (voltaje), más agua (corriente) fluye a través de la tubería.
+                La resistencia (R) es el tamaño de la tubería. Si la tubería es más ancha, hay menos resistencia y más agua puede pasar. Si es más estrecha, la resistencia aumenta, limitando el flujo de agua.
+                Este modelo ayuda a comprender cómo el voltaje, la corriente y la resistencia interactúan en un circuito eléctrico, igual que la presión, el flujo y el tamaño de la tubería en un sistema hidráulico.</p>
+        </section>
+
+        <section id="INVERSORES" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-shadow: 10px; text-align: center; line-height: 1.5; margin-bottom: 30px; color: white; font-size: 40px;">Inversores Solares</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO/IMAGENES/INVERSOR.jpg" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR" style="margin-top: 5%;">
+                Los inversores en sistemas solares convierten la corriente continua (CC) generada por los paneles solares en corriente alterna (CA) 
+                que puede utilizarse en el hogar o para inyectar a la red eléctrica. Funcionan controlando la frecuencia y el voltaje de la electricidad, 
+                asegurando que sea segura y compatible con los sistemas eléctricos existentes. Existen varios tipos de inversores, como los de conexión a red, 
+                los híbridos y los independientes, cada uno con diferentes capacidades y aplicaciones dependiendo de la configuración del sistema y las 
+                necesidades energéticas del usuario.</p>
+        </section>
+
+        <section id="ONDAS" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-shadow: 10px; text-align: center; line-height: 1.5; margin-bottom: 30px; color: white; font-size: 40px;">Tipos de Onda</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO/IMAGENES/ONDAS.jpeg" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR" style="margin-top: 5%;">
+                Los inversores utilizan diferentes tipos de ondas para convertir la corriente continua (CC) de los paneles solares en corriente alterna (CA), dependiendo del modelo 
+                y la calidad del inversor. Los tipos más comunes son la onda senoidal pura, la onda senoidal modificada y la onda cuadrada. La onda senoidal pura es la más eficiente 
+                y la que se asemeja más a la electricidad suministrada por la red eléctrica, ofreciendo una mayor calidad y menos interferencias para dispositivos sensibles. La onda 
+                senoidal modificada es una opción más económica, pero puede generar distorsiones en algunos equipos, aunque sigue siendo adecuada para la mayoría de los electrodomésticos. 
+                La onda cuadrada, 
+                aunque rara en inversores modernos, es la más básica y menos eficiente, utilizada principalmente en aplicaciones simples donde la calidad de la energía no es crítica.</p>
+        </section>
+
+        <section id="DINERO" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-shadow: 10px; text-align: center; line-height: 1.5; margin-bottom: 30px; color: white; font-size: 40px;">Viabilidad del Proyecto</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO/IMAGENES/VIABILIDAD.webp" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR" style="margin-top: 5%;">
+                La implementación de un sistema de paneles solares fotovoltaicos es una inversión rentable a largo plazo. Según nuestro estudio, una inversión aproximada de 22.000.000 
+                de pesos colombianos en equipos y instalación se recupera en tan solo 18 meses. Este ahorro se logra a través de la reducción significativa en las facturas de electricidad, 
+                ya que la energía generada por los paneles solares reemplaza el consumo de la red eléctrica. Además, después de este período de recuperación, 
+                los costos de operación son mínimos, y la generación de energía continúa sin costos adicionales, lo que hace que el sistema se vuelva una fuente de ahorro a largo plazo.</p>
+        </section>
+    </div>
+
+    <!-- Video Introductorio -->
+    <video id="introVideo" class="hidden-video" playsinline>
+        <source src="videos/Entrada Corregida 02.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+    <!-- Pie de página -->
+    <footer style="background-color: #1A2B4C; color: white; padding: 5px; text-align: center; position: relative; width: 100%; margin-top: 50px;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <p style="margin-right: 20px;">
+                <a href="mailto:contacto@tuempresa.com" style="color: white; text-decoration: none;">Contáctanos</a> |
+                <a href="https://www.tuempresa.com/privacidad" style="color: white; text-decoration: none;">Política de Privacidad</a>
+            </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

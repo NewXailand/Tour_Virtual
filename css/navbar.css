@@ -1,0 +1,96 @@
+/* Navbar con Flexbox */
+.navbar {
+    background-color: #1A2B4C; /* Azul oscuro */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    font-size: 23px;
+}
+
+/* Lista de enlaces del navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces del navbar */
+.navbar a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover en enlaces */
+.navbar a:hover {
+    color: #B3344E; /* Rojo */
+}
+
+/* Botón del navbar */
+.btn-open {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #B3344E, #8A1F36); /* Degradado rojo */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+}
+
+/* Hover en el botón */
+.btn-open:hover {
+    background: linear-gradient(45deg, #8A1F36, #B3344E);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+.btn-open:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/* Estilo del botón reutilizado del Tour Virtual */
+/* Estilo del botón "Volver a Información" */
+.btn-back {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 8px; /* Espacio entre el icono y el texto */
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #B3344E, #8A1F36); /* Degradado rojo */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+}
+
+/* Efecto hover */
+.btn-back:hover {
+    background: linear-gradient(45deg, #8A1F36, #B3344E);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+.btn-back:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Asegurar que el icono mantenga el tamaño correcto */
+.material-icons {
+    font-size: 24px;
+}

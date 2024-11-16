@@ -1,0 +1,128 @@
+/* Fuente del documento */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.RECUADROS {
+    background-color: #1A2B4C;
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    max-width: 800%;
+    max-height: 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.VIDEOS {
+    margin-top: 3%;
+    display: flex;
+    max-width: 500px;
+    max-height: 1000px;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 15%;
+    margin-top: 40px;
+}
+
+/* Offcanvas */
+.offcanvas {
+    background-color: aliceblue;
+    background-image: url(C:\Users\vasqu\Videos\TOUR_VIRTUAL_SALA_SISTEMAS\IMAGENES\colegio2.png);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: 2000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.7); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.offcanvas.open {
+    left: 0;
+}
+
+.offcanvas-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+}
+
+.tour-image,
+.extra-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botón estilo degradado */
+.btn-tour {
+    background-color: #AB3049;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: transform 0.3s, background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-tour:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+    background-color: #AB3049;
+}
+
+.offcanvas-text {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botón cerrar */
+.close-offcanvas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Video modal con aspecto preservado */
+.hidden-video {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* Mantener aspecto sin recortar */
+    background-color: black;
+    z-index: 20;
+    pointer-events: none;
+    touch-action: none;
+    visibility: hidden;
+    opacity: 0;
+}
